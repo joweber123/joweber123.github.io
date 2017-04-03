@@ -565,7 +565,7 @@ body {
     text-indent: 101%;
     white-space: nowrap;
     max-width: 135px;
-    background-image: url(/assets/img/james-weber-logo.svg);
+    background-image: url(/assets/img/james-weber-logotop.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -681,12 +681,26 @@ body {
         -ms-transform: translateY(0%);
             transform: translateY(0%); } }
 
-.about {
-  background-image: url(../img/about-bg1.jpg);
-  background-position: right bottom;
+section.about {
+  background-image: url(../video/james1.jpg);
+  background-position: center bottom;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
   height: 400px; }
-  .about .flexheader {
+  section.about video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    background: transparent; }
+  section.about .flexheader {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -696,15 +710,16 @@ body {
     -webkit-flex-direction: rows;
         -ms-flex-direction: rows;
             flex-direction: rows; }
-    .about .flexheader h2 {
+    section.about .flexheader h2 {
       color: #3f3f42;
       font-size: 60px;
       font-weight: 400;
       line-height: 1;
-      padding: 20px 0 0 50px; }
+      padding: 20px 0 0 50px;
+      z-index: 2; }
 
 @media (max-width: 340px) {
-  .about .flexheader h2 {
+  section.about .flexheader h2 {
     font-size: 30px; } }
 
 section.youtube {
@@ -766,7 +781,7 @@ section.youtube {
           padding: 0px 20px 50px; } }
 
 section.mentoring {
-  background-image: url(../img/mentoring-bg.jpg);
+  background-image: url(../img/mentoring-bg.JPG);
   background-size: cover;
   background-position: right bottom;
   color: white;
@@ -1015,7 +1030,7 @@ section.design {
     margin-bottom: 20px; }
 
 section.notes {
-  background-image: url(../img/mentoring-bg.jpg);
+  background-image: url(../img/mentoring-bg.JPG);
   background-size: cover;
   background-position: center;
   color: white; }
@@ -1098,7 +1113,7 @@ section.notes {
       left: 10px; }
 
 section.podcast {
-  background-image: url(../img/podcast-bg.jpg);
+  background-image: url(../img/podcast-bg.JPG);
   background-size: cover;
   background-position: center;
   color: white; }
