@@ -1,6 +1,6 @@
 section.about
 	background:
-		image: url(../video/james1.jpg)
+		image: url(../video/james1.JPG)
 		position: center bottom
 		size: cover
 	position: relative
@@ -41,17 +41,11 @@ section.about
 				font-size: 30px
 
 /* iPad [portrait + landscape] */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+@media only screen and (max-device-width: 900px)
 	section.about
 		background-image: url(../img/about-bg.JPG)
-
-		video
-			display: none
-
-/* iPhone [portrait + landscape] */
-@media only screen and (max-device-width: 480px)
-	section.about
-		background-image: url(../img/about-bg.JPG)
+		position: center bottom
+		size: cover
 
 		video
 			display: none

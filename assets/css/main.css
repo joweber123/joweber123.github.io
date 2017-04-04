@@ -682,7 +682,7 @@ body {
             transform: translateY(0%); } }
 
 section.about {
-  background-image: url(../video/james1.jpg);
+  background-image: url(../video/james1.JPG);
   background-position: center bottom;
   background-size: cover;
   position: relative;
@@ -723,14 +723,13 @@ section.about {
     font-size: 30px; } }
 
 /* iPad [portrait + landscape] */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 900px) {
   section.about {
-    background-image: url(../img/about-bg.JPG); } }
-
-/* iPhone [portrait + landscape] */
-@media only screen and (max-device-width: 480px) {
-  section.about {
-    background-image: url(../img/about-bg.JPG); } }
+    background-image: url(../img/about-bg.JPG);
+    position: center bottom;
+    size: cover; }
+    section.about video {
+      display: none; } }
 
 section.youtube {
   background-image: url(../img/youtube-bg.png);
