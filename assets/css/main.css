@@ -722,6 +722,16 @@ section.about {
   section.about .flexheader h2 {
     font-size: 30px; } }
 
+/* iPad [portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  section.about {
+    background-image: url(../img/about-bg.JPG); } }
+
+/* iPhone [portrait + landscape] */
+@media only screen and (max-device-width: 480px) {
+  section.about {
+    background-image: url(../img/about-bg.JPG); } }
+
 section.youtube {
   background-image: url(../img/youtube-bg.png);
   background-color: #e20a0a;
@@ -785,7 +795,8 @@ section.mentoring {
   background-size: cover;
   background-position: right bottom;
   color: white;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 500px; }
   section.mentoring .home-cta {
     color: #2cb4bd; }
   section.mentoring .home-lead {
@@ -805,7 +816,6 @@ section.mentoring {
   section.mentoring .face {
     height: 80px;
     width: 80px;
-    background-image: url(../img/chika.jpg);
     background-size: cover;
     background-position: center;
     -webkit-border-radius: 50%;
@@ -815,7 +825,19 @@ section.mentoring {
             box-shadow: 0px 4px 8px rbga(0, 0, 0, 0.4);
     position: relative;
     cursor: pointer; }
-    section.mentoring .face.back-btn {
+  section.mentoring .face1 {
+    background-image: url(../img/Danilo.jpg); }
+  section.mentoring .face2 {
+    background-image: url(../img/Kuan.jpg); }
+  section.mentoring .face3 {
+    background-image: url(../img/gregorio.jpg); }
+  section.mentoring .face4 {
+    background-image: url(../img/Cristina.jpg); }
+  section.mentoring .face5 {
+    background-image: url(../img/Jayden.jpg); }
+  section.mentoring .face6 {
+    background-image: url(../img/Sergey.jpg); }
+    section.mentoring .face6.back-btn {
       background: url(../img/back-arrow.svg) center no-repeat;
       display: none; }
   section.mentoring .bubble {
