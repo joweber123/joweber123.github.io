@@ -2,6 +2,7 @@ $(function() {
 	mentoringBubbleClick();
 	setInterval(function(){articleTada()},4000);
 	designBGstuff();
+	//blogarticlesclick();
 });
 
 //this is shorthand for $( document ).ready() which means our function will start running as soon as the whole DOM is finished loading
@@ -11,11 +12,11 @@ function designBGstuff(){
 
 		$(this).parent().parent().css('background-color', $(this).data('color'));
 	}, function(){
-		//this is saying go to the design-img-link when we hover over it and go up two two parents and change it to the background color that is stored in the data 
+		//this is saying go to the design-img-link when we hover over it and go up two two parents and change it to the background color that is stored in the data
 
 
 		$(this).parent().parent().css('background-color', $(this).parent().parent().data('orig-color'));
-	
+
 		//go to the original which is four parents higher and change to that original color which we also stored in data
 	});
 
@@ -29,7 +30,7 @@ function articleTada(){
 }
 
 /*
-do some random math and multiply that by how many 'article-thumb''s there are which in the case is 
+do some random math and multiply that by how many 'article-thumb''s there are which in the case is
 12.  The +1 because it is zero index counting in javascript.  eq means take the selected obect
 which in this case is the randNum and add the class is-emp
 
@@ -62,8 +63,24 @@ function mentoringBubbleClick() {
 
 // when I click a face
 // get the distance of the face from its parent
-// move the whole container up 115px + the count 
+// move the whole container up 115px + the count
 // add the is-open class to the to pop the balloon
+
+/*
+function blogarticlesclick(){
+	$('#article-cta').on('click',function(){
+		$('.article-wrap').toggle();
+	});
+
+};
+
+this function will display or not display my .article-wrap everytime I click on 'article-cta'
+*/
+
+
+
+
+
 
 $(window).scroll(function() {
 	youtubeVidScroll();
@@ -78,7 +95,7 @@ $( document ).ready(function() {
   console.log( 'ready!' );
 })
 
-is the same as 
+is the same as
 $(function() {
   console.log( 'ready!' );
 });
@@ -94,12 +111,12 @@ function youtubeVidScroll() {
 /*
 
 The first part is saying our variable wScroll is going to mean
-Look at the window and see how far we have scrolled from the top 
+Look at the window and see how far we have scrolled from the top
 that is what wScroll is going to mean
 then...
-go and get all of the elements with the class ".video-strip" and 
-change the css background-position property from center 0px to 
-how many pixels we have scrolled down 
+go and get all of the elements with the class ".video-strip" and
+change the css background-position property from center 0px to
+how many pixels we have scrolled down
 
 */
 
@@ -109,7 +126,7 @@ function startArticles(){
 	if($('section.articles').offset().top - $(window).height()/2 < wScroll){
 		$('.article-thumb').each(function(i){
 			setTimeout(function(){
-			$('.article-thumb').eq(i).addClass('is-visible'); 
+			$('.article-thumb').eq(i).addClass('is-visible');
 			}, 300 * i);
 		});
 	}
@@ -125,7 +142,7 @@ then wait 300x2 for the second one, then 300x3 for the third one
 
 
 function startMentoring(){
-	
+
 	var wScroll = $(window).scrollTop();
 
 	if($('section.mentoring').offset().top - $(window).height()/2 < wScroll) {
@@ -144,7 +161,7 @@ function startMentoring(){
 
 /*
 so again get that number of how many pixels we have scrolled down
-and start the 
+and start the
 
 
 
