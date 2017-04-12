@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Japan Journal 2
+title: Japan 2
 thumbnail: jp-2.jpg
 ---
 
@@ -16,6 +16,6 @@ I recently visited a farm which is called the Asian Rural Institute. I had heard
 
 One last event I would like to mention is Sports day which apparently all schools partake in at varied dates. The entire school is divided into four teams, including the entire teaching staff; blue, red, green, yellow. Then the entire day is devoted to random competitions. They include but are not limited to, 30 person at a time jump rope, two teams running towards big bamboo sticks lying on the ground then trying to drag them back to your side while the other teams tries to rip it from your hands, multiple relay races, many of which include costumes and good old fashion 80 person rope tug o war. I was able to participate in the teacher relay race and could barely walk the next day after sprinting only 50 yards, and I also had a horribly stupid looking sunburn on my face, excluding a stripe on my forehead where I wore my red headband which was left pasty white.
 
-Apart from these big writable moments I have had many that are dear to my heart whose combination is perhaps more powerful to me than these, but certainly not too exciting to read about. I am trying to find things to involve myself in and have gone twice to a bouldering gym and I was finally able to climb a mountain and be in the wilderness leaping from rock to rock along a mountain stream. I’ve attended a Japanese theater performance and a sake tasting convention and had lots of conversations with new teachers and dug up peanuts from time to time. I’ve discovered that my school has a pottery studio and sewing machines and have yet been unable to convey that I would like to use them in Japanese. Last time I tried I was shown a bicycle and a kiln. This is my life. 
+Apart from these big writable moments I have had many that are dear to my heart whose combination is perhaps more powerful to me than these, but certainly not too exciting to read about. I am trying to find things to involve myself in and have gone twice to a bouldering gym and I was finally able to climb a mountain and be in the wilderness leaping from rock to rock along a mountain stream. I’ve attended a Japanese theater performance and a sake tasting convention and had lots of conversations with new teachers and dug up peanuts from time to time. I’ve discovered that my school has a pottery studio and sewing machines and have yet been unable to convey that I would like to use them in Japanese. Last time I tried I was shown a bicycle and a kiln. This is my life.
 
 -James

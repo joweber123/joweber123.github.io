@@ -2,10 +2,47 @@ $(function() {
 	mentoringBubbleClick();
 	setInterval(function(){articleTada()},4000);
 	designBGstuff();
-	//blogarticlesclick();
+	blogarticlesclick();
 });
 
 //this is shorthand for $( document ).ready() which means our function will start running as soon as the whole DOM is finished loading
+$( window ).resize(function() {
+	defaultRestore();
+});
+
+
+function blogarticlesclick () {
+	if ( $(window).width() > 640) {
+
+	$('#article-cta').click(function(){
+
+		$('.post-picture').css('display','none');
+		$('.post-list').css('display','flex');
+	});
+
+	$('#article-return-cta'). click(function(){
+		$('.post-picture').css('display', 'flex');
+		$('.post-list').hide(800);
+	});
+}
+
+else {
+	$('#article-cta').click(function(){
+
+		$('.post-picture').css('display','none');
+		$('.post-list-small').css('display','block');
+	});
+
+	$('.article-return-cta-small'). click(function(){
+		$('.post-picture').css('display', 'block');
+		$('.post-list-small').hide(800);
+	});
+}
+}
+
+//this is our function to control the article section.  Sections start as display none and then when you click on the see more or back button it changes their display to block
+
+
 
 function designBGstuff(){
 	$('.design-img-link').hover(function(){

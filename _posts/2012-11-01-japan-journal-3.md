@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Japan Journal 3
+title: Japan 3
 thumbnail: jp-3.jpg
 ---
 

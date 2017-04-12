@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Japan Journal 10
+title: Japan 10
 thumbnail: jp-10.jpg
 ---
 
@@ -22,4 +22,4 @@ thumbnail: jp-10.jpg
 
   Under a quiet blue tinged night sky, -James
 
-p.s. Just another little observation, that I am still investigating so don’t take this for 100% fact, but, a lot of Japanese people laugh every time that I someone sneezes which I think is a great way to react. It is very satisfying to make that funny sneeze sound and then to hear chuckling. Personally, I find it is a very complete experience to throw your body into a really big sneeze and then to laugh along with everyone. 
+p.s. Just another little observation, that I am still investigating so don’t take this for 100% fact, but, a lot of Japanese people laugh every time that I someone sneezes which I think is a great way to react. It is very satisfying to make that funny sneeze sound and then to hear chuckling. Personally, I find it is a very complete experience to throw your body into a really big sneeze and then to laugh along with everyone.

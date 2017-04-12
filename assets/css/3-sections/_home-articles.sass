@@ -1,78 +1,218 @@
+
 section.articles
 	background:
 		image: url(../img/articles-bg.jpg)
 		repeat: repeat
 		size: cover
 
-	.col-1
+	.post-picture
 		display: flex
+		width: 100%
+
+		.col-1
+			display: flex
+			align-items: center
+
+		.home-cta
+			color: white
+			background: #3d96cd
+
+		.article-wrap
+			margin: -50px 0
+			+clearfix
+
+
+		.article-thumb
+			display: block
+			background:
+				size: cover
+				position: center
+			background-repeat: no-repeat
+			width: 25%
+			float: left
+			position: relative
+			overflow: hidden
+			opacity: 0
+			transition: all 300ms ease-in-out
+
+			&.is-visible
+				opacity: 1
+
+			&.is-emph
+				animation-name: tada
+				animation-duration: 1s
+				animation-fill-mode: both
+				z-index: 1
+
+			&:after
+				content: ''
+				display: block
+				padding-top: 100%
+
+			.article-meta
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background: fade-out(#3d96cd, 0.3)
+				color: white
+				padding: 10px
+				transform: translate(0%, 100%) scale(0.5)
+				transition: all 200ms ease-in-out
+				opacity: 0
+
+				.name
+					font-size: 18px
+					line-height: 1.2
+
+				.date
+					font-style: italic
+
+		.article-thumb:hover .article-meta
+			opacity: 1
+			transform: translate(0%, 0%)
+
+	.post-list
+		display: none
+		margin: -50px 0
+		width: 100%
 		align-items: center
 
-	.home-cta
-		color: white
-		background: #3d96cd
 
-	.article-wrap
-		margin: -50px 0
-		+clearfix
 
-	.article-thumb
-		display: block
-		background:
-			size: cover
-			position: center
-		width: 25%
-		float: left
-		position: relative
-		overflow: hidden
-		opacity: 0
-		transition: all 300ms ease-in-out
-
-		&.is-visible
-			opacity: 1
-
-		&.is-emph
-			animation-name: tada
-			animation-duration: 1s
-			animation-fill-mode: both
-			z-index: 1
-
-		&:after
-			content: ''
-			display: block
-			padding-top: 100%
-
-		.article-meta
-			position: absolute
-			top: 0
-			left: 0
-			right: 0
-			bottom: 0
-			background: fade-out(#3d96cd, 0.3)
+		#article-return-cta
+			width: 10%
+			box-shadow: none
 			color: white
-			padding: 10px
-			transform: translate(0%, 100%) scale(0.5)
-			transition: all 200ms ease-in-out
-			opacity: 0
+			background: #3d96cd
+			height: inherit
+			padding-top: 50%
+			text-align: center
+			font-size: 30px
+			height: 100%
+			box-sizing: border-box
+			cursor: pointer
 
-			.name
-				font-size: 18px
-				line-height: 1.2
+			&:hover
+				background: #6db0d9
 
-			.date
-				font-style: italic
+		.post-index-wrap
+			width: 90%
 
-	.article-thumb:hover .article-meta
-		opacity: 1
-		transform: translate(0%, 0%)
+			.article-thumb-post
+				display: block
+				background:
+					size: cover
+				width: 20%
+				float: left
+				position: relative
+				overflow: hidden
+
+				&:after
+					content: ''
+					display: block
+					padding-top: 100%
+
+			.article-meta
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				color: white
+				background: fade-out(#3d96cd, 0.3)
+				padding: 10px
+				transform: translate(0%, 100%) scale(0.5)
+				transition: all 200ms ease-in-out
+				opacity: 0
+
+				.name
+					font-size: 18px
+
+				.date
+					font-style: italic
+
+			.article-thumb-post:hover .article-meta
+				opacity: 1
+				transform: translate(0%, 0%) scale(1)
+
+	.post-list-small
+		display: none
 
 @media (max-width: 640px)
-	.desc-wrap
-		margin-top: 100px
+	section.articles .post-picture .col-1
+		padding-top: 50px
+	section.articles .post-picture
+		display: block
 
-@media (max-width: 1000px) and (min-width: 640px)
-	.article-thumb
-		width: 33.3%
+	section.articles .post-picture .article-thumb .article-meta
+		opacity: 1
+		transform: translate(0%, 60%)
+		border-radius: 0 20px 0 0
+		background-color: rgba(255, 255, 255, 0.5)
+
+	section.articles .post-picture .article-thumb .article-meta .name
+		font-size: 9px
+		text-align: center
+		color: black
+	section.articles .post-picture .article-thumb .article-meta .date
+		font-size: 8px
+		text-align: center
+		color: black
+
+	section.articles .post-picture .article-wrap
+		display: block
+
+	section.articles .post-list
+		display: none !important
+
+	section.articles .post-list-small
+		display: none
+		padding: 0 40px
+
+	section.articles .post-list-small	.article-return-cta-small
+		display: block
+		width: 100%
+		padding: 10px 0px
+		margin-bottom: 20px
+		color: white
+		background: #3d96cd
+		text-align: center
+		font-size: 30px
+		cursor: pointer
+
+		&:hover
+			background: #6db0d9
+
+	section.articles .article-thumb-post-small
+		color: black
+		display: flex
+		padding-bottom: 20px
+		justify-content: center
+
+	section.articles .post-image
+		height: 100px
+
+	section.articles .article-meta-small
+		background-color: rgba(255, 255, 255, 0.4)
+		float: right
+		padding-top: 20px
+		padding-left: 20px
+		width: 100%
+		justify-content: center
+		border-radius: 0 20px 0 0
+
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes tada

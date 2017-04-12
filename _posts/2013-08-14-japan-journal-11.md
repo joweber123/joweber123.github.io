@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Japan Journal 11
+title: Japan 11
 thumbnail: jp-11.jpg
 ---
 

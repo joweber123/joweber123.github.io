@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Japan Journal 4
+title: Japan 4
 thumbnail: jp-4.jpg
 ---
 
@@ -36,6 +36,6 @@ Other days I would get off the train coming home from work and just walk from st
 
 It is the holiday season here and the next two weeks are going to be very exciting. I am helping to clean a shrine and to cook and I have a couple of end of the year parties I am looking forward to. Everyone here is always so busy with work so hopefully this will be a time that I can bond with some of my fellow coworkers. I will leave you with one other funny little anecdote. (Background information, in Japan they sell corndogs at all of the convenience stores but they call them “American dogs”). The other day, a teacher put on a test the following question; if you had the chance to visit America, what would you want to eat? Answer: I want to eat American dogs.
 
-I wish everyone a Merry Christmas back home and hope that you can spend it in the company of family and friends. 
+I wish everyone a Merry Christmas back home and hope that you can spend it in the company of family and friends.
 
 Lots of love, el caminante errante-james

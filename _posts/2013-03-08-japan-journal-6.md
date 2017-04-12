@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Japan Journal 6
+title: Japan 6
 thumbnail: jp-6.jpg
 ---
 
@@ -18,6 +18,6 @@ thumbnail: jp-6.jpg
 
  Yesterday I watched my first Japanese graduation and it was very similar to our graduations back home, just with more bowing and the occasional Lion king background music during people’s speeches. People cried, the kids sang a song and no, nobody wore a gown, just their normal school attire. It means though that soon I will start with the official school year and see it come to fruition which I am excited about. This year has really felt stop and go for me because I arrived half way through the year and I never knew what was happening. This year I will see it pass step by step in the natural rhythm and I think that I am may understand more.
 
- I am excited for spring and the adventures that it will bring. I have not ventured too far from home during the winter and I am very excited for my friend Jannik to visit and to explore other parts of Japan with him at the end of this month. I am going to Kyoto for the first time at the beginning of April. I will try and take more pictures from this time on, but as many of you know, that is not my strong suit. Thank you all for your support and letters. 
+ I am excited for spring and the adventures that it will bring. I have not ventured too far from home during the winter and I am very excited for my friend Jannik to visit and to explore other parts of Japan with him at the end of this month. I am going to Kyoto for the first time at the beginning of April. I will try and take more pictures from this time on, but as many of you know, that is not my strong suit. Thank you all for your support and letters.
 
  -james

@@ -1,17 +1,39 @@
 section.articles
 	.flex.flex--center
-		.col-50
-			.article-wrap
-				|{%for post in site.posts limit: 12 %}
-				a(href="{{post.url}}" style="background-image: url(../assets/img/posts/thumbnails/{{post.thumbnail}})").article-thumb
+		.post-picture
+			.col-50
+				.article-wrap
+					|{%for post in site.posts limit: 12 %}
+					a(href="{{post.url}}" style="background-image: url(../assets/img/posts/thumbnails/{{post.thumbnail}})").article-thumb
+						.article-meta
+							.name {{post.title}}
+							.date {{post.date | date: "%b, %d, %Y"}}
+					|{% endfor %}
+
+			.col-50.flex.flex--center.order-first
+				.col-1
+					.desc-wrap
+						p.home-lead.outdented ...Writing and designing articles
+						a("")#article-cta.home-cta  See all articles
+
+		.post-list
+			a("")#article-return-cta  back
+			.post-index-wrap
+				|{%for post in site.posts%}
+				a(href="{{post.url}}" style="background-image: url(../assets/img/posts/thumbnails/{{post.thumbnail}})").article-thumb-post
 					.article-meta
 						.name {{post.title}}
 						.date {{post.date | date: "%b, %d, %Y"}}
 				|{% endfor %}
 
-
-		.col-50.flex.flex--center.order-first
-			.col-1
-				.desc-wrap
-					p.home-lead.outdented ...Writing and designing articles
-					a("").home-cta  See all articles
+		.post-list-small
+			a("").article-return-cta-small back
+			.post-index-wrap-small
+				|{%for post in site.posts%}
+				a(href="{{post.url}}").article-thumb-post-small
+					img.post-image(src="../assets/img/posts/thumbnails/{{post.thumbnail}}")
+					.article-meta-small
+						.name-small {{ post.date | date: "%b, %d, %Y" }}
+						.date-small {{  post.title }}
+				|{% endfor %}
+			a("").article-return-cta-small back

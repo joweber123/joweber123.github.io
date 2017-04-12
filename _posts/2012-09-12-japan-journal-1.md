@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Japan Journal 1
+title: Japan 1
 thumbnail: jp-1.jpg
 ---
 *Japanese teacher to me today at lunch: Your food bowl so big, a goldfish could swim in it.*

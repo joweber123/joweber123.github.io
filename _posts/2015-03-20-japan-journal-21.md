@@ -1,5 +1,5 @@
 ---
 layout: post
-title: Japan Journal 21
+title: Japan 21
 thumbnail: jp-21.jpg
 ---

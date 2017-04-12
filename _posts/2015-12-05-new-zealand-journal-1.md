@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New Zealand Journal 1
+title: New Zealand 1
 thumbnail: nz-1.jpg
 ---
 
