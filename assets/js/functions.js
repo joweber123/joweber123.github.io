@@ -2,13 +2,76 @@ $(function() {
 	mentoringBubbleClick();
 	setInterval(function(){articleTada()},4000);
 	designBGstuff();
-	blogarticlesclick();
+	disappearingact();
+	smoothScroll(300);
+	mobileheader();
+
+	//blogarticlesclick();
+
 });
 
+function smoothScroll (duration) {
+	$('a[href^="#"]').on('click', function(event) {
+
+	    var target = $( $(this).attr('href') );
+
+	    if( target.length ) {
+	        event.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: target.offset().top
+	        }, duration);
+	    }
+	});
+}
+
+function mobileheader(){
+	$('.mobile-nav-toggle').click(function(){
+		if( $( this ).hasClass( "is-open" ) ) {
+		$('.home-wrap .mobile-nav, header .header-position .mobile-nav-toggle').removeClass('is-open');
+		$('.header-position').css('margin-bottom', '0px');
+	} else {
+		$('.home-wrap .mobile-nav, header .header-position .mobile-nav-toggle').addClass('is-open');
+		$('.header-position').css('margin-bottom', '170px');
+	}
+
+	});
+};
+
+
+
+
+
+
 //this is shorthand for $( document ).ready() which means our function will start running as soon as the whole DOM is finished loading
-$( window ).resize(function() {
-	defaultRestore();
-});
+function disappearingact(){
+	$('#article-cta').click(function(){
+		$('section.postlist').addClass('postlistap');
+		$('section.articles').addClass('articlesdis');
+	});
+
+	$('.homereturn').click(function(){
+		$('section.postlist').removeClass('postlistap');
+		$('section.articles').removeClass('articlesdis');
+	});
+};
+/*
+$(window).on('resize',function() {
+    var $MyDiv1 = $('.post-list');
+    if ($MyDiv1.css('display') == 'none') {
+			if ( $(window).width() > 640) {
+      	$('.post-picture').css('display','flex');
+    }}
+}).trigger('resize');
+
+$(window).on('resize',function() {
+    var $MyDiv2 = $('.post-list');
+    if ($MyDiv2.css('display') == 'none') {
+			if ( $(window).width() < 640) {
+      	$('.post-list-small').css('display','block');
+    }}
+}).trigger('resize');
+
+
 
 
 function blogarticlesclick () {
@@ -39,7 +102,7 @@ else {
 	});
 }
 }
-
+*/
 //this is our function to control the article section.  Sections start as display none and then when you click on the see more or back button it changes their display to block
 
 
@@ -164,7 +227,7 @@ function startArticles(){
 		$('.article-thumb').each(function(i){
 			setTimeout(function(){
 			$('.article-thumb').eq(i).addClass('is-visible');
-			}, 300 * i);
+		}, 200 * i);
 		});
 	}
 }

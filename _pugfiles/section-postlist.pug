@@ -1,0 +1,12 @@
+section.postlist#section-postlist
+  .flex
+    .post-list
+      a("").homereturn
+        .homereturntext back
+      .post-index-wrap
+        |{%for post in site.posts%}
+        a(href="{{post.url}}" style="background-image: url(../assets/img/posts/thumbnails/{{post.thumbnail}})").article-thumb-post
+          .article-meta
+            .name {{post.title}}
+            .date {{post.date | date: "%b, %d, %Y"}}
+        |{% endfor %}

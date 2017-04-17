@@ -1,3 +1,4 @@
 name: Website2
 markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+baseurl: /joweber

@@ -1,9 +1,11 @@
 
 section.articles
+	opacity: 1
 	background:
 		image: url(../img/articles-bg.jpg)
 		repeat: repeat
 		size: cover
+
 
 	.post-picture
 		display: flex
@@ -140,6 +142,9 @@ section.articles
 	.post-list-small
 		display: none
 
+section.articles.articlesdis
+	display: none
+
 @media (max-width: 640px)
 	section.articles .post-picture .col-1
 		padding-top: 50px
@@ -190,6 +195,7 @@ section.articles
 		display: flex
 		padding-bottom: 20px
 		justify-content: center
+		
 
 	section.articles .post-image
 		height: 100px

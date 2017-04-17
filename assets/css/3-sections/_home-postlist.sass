@@ -1,0 +1,120 @@
+section.postlist
+  display: none
+  background:
+    image: url(../img/articles-bg.jpg)
+
+
+  .post-list
+    display: flex
+    width: 100%
+    margin: -50px 0
+    position: relative
+
+    .homereturn
+      display: flex
+      width: 10%
+      color: white
+      background-color: #3d96cd
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      justify-content: center
+      flex-direction: column
+      align-items: center
+      cursor: pointer
+      &:hover
+        background: #6db0d9
+      .homereturntext
+        font-size: 20px
+
+    .post-index-wrap
+      float: right
+      width: 90%
+
+      .article-thumb-post
+        display: block
+        width: 20%
+        float: left
+        background:
+          size: cover
+          position: center
+        position: relative
+
+        &:after
+          content: ''
+          display: block
+          padding-top: 100%
+
+
+
+        .article-meta
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          background: fade-out(#3d96cd, 0.3)
+          color: white
+          padding: 10px
+          transform: translate(0%, 100%)scale(0.5)
+          transition: all 200ms ease-in-out
+          opacity: 0
+
+          .name
+            font-size: 18px
+            line-height: 1.2
+          .date
+            font-style: italic
+
+      .article-thumb-post:hover .article-meta
+        opacity: 1
+        transform: translate(0%, 0%)
+
+section.postlistap
+  display: block
+
+@media (max-width: 640px)
+
+  section.postlist .post-list
+    display: flex
+    width: 100%
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  section.postlist .post-list .homereturn
+    display: block
+    text-align: center
+    padding: 5px
+    width: 65%
+    margin: 20px 20px
+
+
+  section.postlist .post-list .post-index-wrap
+    display: flex
+    width: 100%
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+
+
+  section.postlist .post-list .post-index-wrap .article-thumb-post
+    display: flex
+    height: 130px
+    width: 130px
+    justify-content: center
+    margin: 20px 0px
+    transform: translate(-50%, 0%)
+
+
+
+  section.postlist .post-list .post-index-wrap .article-thumb-post .article-meta
+    opacity: 1
+    transform: translate(100%, 0%)scale(1)
+    
+
+
+  section.postlist .post-list .post-index-wrap .article-thumb-post .article-meta .name
+    font-size: 16px
